@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+label{
+    color: #838383
+}
+.footerCard{
+  background-color: #0f2c5c;
+  padding-top: 15px;
+  height: auto;
+  width:auto;
+}
+.footH3{
+  color: white;
+  text-align: start;
+  text-decoration: none;
+  font-size: 1.0rem;
+  font-weight: 500;
+  color: white
+}
+.footList{
+  color: white;
+  text-align: start;
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+  
+}
+.footList :hover{
+  text-decoration: underline;
+}
+.icons{
+  display: flex;
+  font-size: 40px;
+  gap: 10px;
+  justify-content: center;
+  
+  
+}
+.card-container1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  gap: 96px;
+  padding: 10px;
+}
+.footerBar a{
+  text-decoration: none;
+  color: #fff;
+  opacity: .9;
+  font-size: 1.0rem;
+  font-weight: 300;
+}
+.footerBar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.0rem;
+  font-weight: 300;
+  color: #fff;
+  opacity: .5;
+}
+.ulList{
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+.gplay{
+  height: 134px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background: linear-gradient(277deg,#00bda5 0,#1aa0bc 52%,#0089df 100%);
+}
+  
+.login_inputs input{
+  width: 380px;
+  height: 30px;
+  margin: 3px 0px 20px 0px;
+  border: 1px solid #0098df;
+  border-radius: 4px;
+}
+.login_inputs mat-select{
+  width: 380px;
+  height: 30px;
+  border: 1px solid #0098df;
+  border-radius: 4px;
+}

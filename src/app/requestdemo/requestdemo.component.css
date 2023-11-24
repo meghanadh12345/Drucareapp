@@ -1,0 +1,80 @@
+
+ input.ng-touched.ng-invalid{
+    border: 2px solid red;
+}
+
+input.ng-touched.ng-valid{
+    border: 2px solid skyblue;
+}
+.log-p{
+    padding: 15px;
+}
+.content {
+background-color: cadetblue ;
+text-align: center;
+justify-content: center;
+height:30%;
+}
+.copyright a{
+    text-align: right;
+    color: white;
+}
+
+.androidapp_title{
+    margin-left: 20%; 
+    margin-top: 50px;
+}
+.appstore_img{
+    width: 200px;
+     height: 100px;
+     margin-top: 20px;
+}
+.btmpage{
+    background-color: darkcyan;
+    text-align: center;
+    height:200px ;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+   
+}
+.bgctypes{
+    background-color: cadetblue;
+    display: flex; 
+    height: 140px;
+}
+.RDbtn {
+    width: 210px;
+     height: 50px;
+     border-radius: 7px;             
+}
+
+
+.bgc_links{
+    background-color: darkcyan; 
+    display: flex;
+    color: white;    
+}
+.product_links{
+    margin-left:5%; 
+     
+}
+.company_links{
+    margin-left:5%;    
+}
+.info_link{
+    margin-left:10%;
+}
+.copyright a{
+    text-align: right;
+    color: white;
+}
+.lastimgs{
+    margin-left:35%;
+     margin-top:2%; 
+    display:flex;
+}
+.aws_img{
+   width: 160px;
+    height: 120px;
+} 

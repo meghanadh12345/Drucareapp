@@ -1,0 +1,229 @@
+<div>
+     <mat-toolbar-row style="padding: 10px;">
+     <mat-icon fontIcon="phone"></mat-icon>
+     <span> +91-40-48213344 |</span>
+     <mat-icon fontIcon="smartphone"></mat-icon>
+     <span >+91-70936-11919 |</span>
+     <mat-icon fontIcon="mail"></mat-icon>
+     <span >contact@dru.care</span>
+     <marquee behavior="" direction="" style="width: 600px; color: red;">Hi! we are moving to new address,please use <span style="color: darkcyan;">in.dru.care </span>access</marquee>
+     <div>
+       <mat-select id="flagSelect" [(ngModel)]="selectedFlag" name="flag">
+         <mat-option *ngFor="let flag of flags"></mat-option>
+       </mat-select>
+     </div>
+     
+     <div *ngIf="selectedFlag">
+       <div *ngIf="selectedFlag === 'indian'">
+         <img src="https://images.unsplash.com/photo-1597058712635-3182d1eacc1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kaWFuJTIwZmxhZ3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="Indian Flag" width="70px">
+       </div>
+       <div *ngIf="selectedFlag === 'usa'">
+         <img src="https://www.pngitem.com/pimgs/m/519-5199409_usa-flag-vector-hd-png-download.png" alt="USA Flag" width="70px">
+       </div>
+     </div>
+     </mat-toolbar-row>
+   </div>
+   <div>
+     <div class="toolbar1" >
+       <mat-toolbar>
+        <!-- <div><img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/drucare-brand-color.svg" alt="drucare" width="100px"></div> -->
+         <h1 style="font-size: 30px; color: #838383;">Drucare</h1>
+           <span class="nav-right"></span>
+           <button mat-button style="color: black" *ngFor="let link of links" routerLink="{{link}}">{{link}}</button>
+       <div class="logbtns">
+         <a id="logbtn"><button mat-button style="font-size:0.8em;letter-spacing: 0;" color="basic" routerLink="/login">Login</button></a>
+         <a id="signbtn"><button mat-button style="width: 100px;font-size:0.8em;letter-spacing: 0;" routerLink="/signup">Sign Up</button></a>
+       </div>
+     </mat-toolbar>
+     </div>
+   </div> 
+   <div class="homeBody">
+   <span></span>
+   <div style="display: flex;justify-content: space-between;">
+     <div style="width: 380px;color: white;">
+       <h1 style="font-size: 1.6rem;font-weight: bold; width: 600px;padding:35px 35px 0px 35px;">ENGAGE AND DELIVER CARE IN A WAY THAT DELIGHTS YOUR PATIENTS</h1>
+       <p style="padding: 0px 0px 0px 35px;width: 500px; font-size: 14px;font-family: 'Playfair Display',serif!important;">
+         Grow your revenue and lower costs: Digitize business & clinical workflows, analyze metrics and find opportunities to grow.
+       </p>
+       <a> <button mat-raised-button color="basic" routerLink="/requestdemo" class="rqBtn">Request Demo</button></a>
+     </div>
+     <div class="video">
+       <video controls=""  poster="transparent.svg" width="100%" height="100%" >
+         <source src="https://s3.ap-south-1.amazonaws.com/dru.assets/video/drucare-intro.mp4" type="video/mp4" >
+       </video>
+     </div>
+   </div>
+     <h1 style="text-align: center; color: #ffc312;font-weight: bold;font-family:Arial;">Search specialities, doctors & hospitals for appointment booking</h1>
+     <div class="locationDd">
+       <input type="text" placeholder="Select loction" style="width: 250px;border:0px solid white;border-top-left-radius: 10px;border-bottom-left-radius:10px ;height: 40px;">
+       <input type="text" placeholder="Search Specialities, Doctors & Hospitals" style="width: 450px;height: 40px;border:1px solid lightgrey;">
+       <button type="submit" style="width: 50px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+     </div>
+   </div> <br><br>
+   
+   <div class="postion">
+    <p class="trusted">TRUSTED BY OVER 
+       <span class="span300">300+</span>
+       INNOVATIVE HEALTHCARE ORGANISATIONS</p>
+       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/ayurved.png"  alt="...">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/arunodaya.png" alt="...">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/highsight.png" alt="...">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/marvel.png"  alt="...">
+            </div>
+            <div class="carousel-item active">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/pragnya.png" alt="...">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/nova.png" alt="...">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/radhika.png" alt="...">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/restore.png"  alt="...">
+            </div>
+            <div class="carousel-item active">
+             <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/viyaan.png" alt="...">
+             <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/vstar.png" alt="...">
+             <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/smitha.png" alt="...">
+             <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/customers-logo/mithra.png" alt="...">
+           </div>
+    
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+
+
+
+   <div class="container10">
+     <div>
+       <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/continent-md-ico.svg" alt="continent"><br><br>
+       <h1>2</h1>
+       <h1>Continents</h1>
+     </div><span class="vr"></span>
+     <div>
+       <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/user-md-ico.svg" alt="user-md-ico"><br><br>
+       <h1>299</h1>
+       <h1>Users</h1>
+     </div><hr><span class="vr"></span>
+     <div>
+       <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/patient-record-md-ico.svg" alt="patient-record-md-ico"><br><br>
+       <h1>13,83,091</h1>
+       <h1>Patient Records</h1>
+     </div>
+   </div>
+   <div class="container0" style="background-color: #0098df;">
+     <h1 style="text-align: center;color: white;padding: 50px 0px 0px 0px;">SELECT YOUR ORGANISATION TYPE TO LEARN MORE</h1>
+   <div class="card-container">
+     <mat-card class="card" *ngFor="let card of cards">
+       <img [src]="card.image"  alt="" class="image"> 
+       <p style="font-size: large;font-weight: 450;">{{card.title}}</p>
+       <p style="margin: 20px;color: #838383;">{{card.content}}</p>
+        
+     </mat-card>
+   </div>
+   </div> <br><br>
+   
+   <h1 class="this_heading">THIS IS WHY WE DO, WHAT WE DO.</h1> <br>
+<mat-card class="matcardav_size">
+   <mat-card-content>
+      <p>
+         Drucare ONE is user-friendly to understand and easy to navigate.
+          The training they provided for us on the application helped us 
+          shift to cloud-based services smoothly and made us go paperless within a few months of beginning.
+           The functions provided in their application solved our requirements for operations quickly. 
+           We never a felt software could replace traditional methods and make things easy for our staff.
+      </p>
+      <div class="avanthi_img">
+         <div>
+         <img src="https://s3.ap-south-1.amazonaws.com/in-pr-user-profile-pictures/p8IzMPcg-HS%20Logo.PNG" alt="" >
+         <h3>Avanthi ENT hospital</h3>
+         </div>
+      </div>
+   </mat-card-content>
+</mat-card> <br>
+
+
+
+
+     <div class="requestBox">
+       <div>
+     <h1 style="text-align: center;">Get started with zero upfront investment</h1>
+      <a> <button mat-button  class="rqBtn1" style="color: #0098df;" routerLink="/requestdemo">Request Demo</button></a>
+   </div>
+   </div>
+   <div class="gplay">
+   <div>
+     <h1 style="color: white;font-weight: 500;text-align: center; ">Book an appointment using our Drucare CliQ Android app</h1>
+   </div>
+   <div>
+     <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/appointment-icons/en_badge_web_generic.png" alt="" width="200px">
+   </div>
+   </div>
+   <div>
+     <div class="footerCard">
+       <div class="card-container1" style="color: white;">
+         <div class="cardFoot">
+           <h3 class="footH3">Products</h3>
+             <a  class="footList" href=""><p *ngFor="let x of products">{{x}}</p></a>
+         </div>
+         <div class="cardFoot">
+           <h3 class="footH3">Company</h3>
+             <a  class="footList" href="" ><p *ngFor="let x of company">{{x}}</p></a>
+         </div>
+         <div class="cardFoot">
+           <h3 class="footH3">Info</h3>
+           <a  class="footList" href=""><p>Blog</p></a>
+         </div>
+         <div style="width: 300px;">
+           <div class="icons">
+           <i class="fa-brands fa-facebook-f"></i>
+           <i class="fa-brands fa-twitter"></i>
+           <i class="fa-brands fa-youtube"></i>
+           <i class="fa-brands fa-linkedin-in"></i>
+         </div><br>
+           
+           <!-- <mat-grid-list cols="2" rowHeight="2:1">
+        <div style="padding: 20px;">
+            <div>
+                <mat-grid-tile><img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/aws-partner-badge.png" alt="" width="100px" height="100px"></mat-grid-tile>
+            </div>
+            <div>
+                <mat-grid-tile><img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/site/ABDM.png" alt="" width="100px" height="100px"></mat-grid-tile>
+            </div>
+        </div>
+            <div> 
+                <mat-grid-tile><img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/site/qci.png" alt="" width="100px" height="100px"></mat-grid-tile> 
+            </div>
+            <div>
+            <mat-grid-tile><img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/site/drucare-iso-27001-certificate.jpg" alt="" width="100px" height="100px"></mat-grid-tile>
+            </div>
+          </mat-grid-list> -->
+
+
+         </div>
+       </div>
+     </div>
+   </div>
+   <footer style="background-color:#0a1d3e;color:darkgray ;height: 35px;">
+     <div class="footerBar">
+       <div>
+     <ul class="ulList">
+      <li><a href="">PrivacyPolicy</a></li>
+       <li><a href="">Terms of Services</a></li>
+       <li><a href="">Payment & Refund</a></li>
+       <li><a href="">Advertisement</a></li>
+     </ul>
+   </div>
+     <div style="float:right;">
+       <p>Copyright © 2016-2023, Drucare</p>
+     </div>
+   </div>
+   </footer>
+
+   

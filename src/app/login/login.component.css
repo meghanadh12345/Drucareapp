@@ -1,0 +1,42 @@
+
+.container{
+    display: flex;
+    margin-left: 5%; 
+}
+.postsion{
+     margin-left: 35%;
+}
+input.ng-touched.ng-invalid{
+     border: 2px solid red;
+}
+
+input.ng-touched.ng-valid{
+     border: 2px solid skyblue;
+}
+.marque{
+     direction: left;
+     color: red;
+     /* font-size: 14px;
+     font-weight: 200; */
+}
+
+
+.loginbtn{     
+     font-family: 'Playfair Display',serif!important;
+     font-size: 3rem;
+     margin-right: 490px;
+}
+.form-control{
+     width: 500px;
+      height: 40px;
+      border-radius: 5px;
+      border-color: #0098df;
+}
+.fielderrorcolor{
+     color: red;
+}
+.loginsize{
+     width: 160px;
+      height: 40px;
+      border-radius: 5px;
+}   

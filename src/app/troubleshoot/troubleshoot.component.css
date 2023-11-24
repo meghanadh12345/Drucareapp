@@ -1,0 +1,13 @@
+
+
+input.ng-touched.ng-invalid{
+    border: 2px solid red;
+}
+
+input.ng-touched.ng-valid{
+    border: 2px solid skyblue;
+}
+.place{
+    text-align: center;
+    margin-top: 100px;
+}

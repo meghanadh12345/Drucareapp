@@ -1,0 +1,152 @@
+
+ <div class="content">
+  <h1  style="padding-top: 70px;">REQUEST DEMO</h1>
+  <p>We are happy to demonstrate how our platform DrucareONE can help you. Please fill in the details below.</p> 
+</div>
+
+
+<div style="display: flex; margin-top: 5%;">
+<div>
+<div style="margin-left: 20%;">
+  <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/request-dem-img.png" alt="">
+</div>  <br><br>
+    <div style="margin-left: 10%;">
+      <h1>What do you get in the demo ?</h1>
+       <p><input type="radio">Introduction of the company over a brief conversation.</p>
+       <p><input type="radio">Live demo of our product DrucareONE</p>
+       <p><input type="radio">Insights into how our product can cater to the needs of your organisation.</p>
+       <p><input type="radio">Professional B2B approach.</p>
+   </div>
+</div>
+
+<form [formGroup]="myform">
+  <div style="margin-left: 40%; ">
+  <h1>Fill the details below</h1>
+  <div style="display: flex; margin-left:-12px;">
+    <div class="log-p">       
+      <label>title</label><br>
+      <select input type="text"  formControlName="Doctors" style="width: 100px; height: 30px;">
+           <option active>Mr</option>
+           <option>Ms</option>
+           <option>Dr</option>
+           <option>Mrs</option>
+           <option>professor</option>
+   </select>
+ <div *ngIf="myform.controls.Doctors.invalid && (myform.controls.Doctors.dirty || myform.controls.Doctors.touched)" >
+ <div *ngIf="myform.controls.Doctors.errors?.['required']"  style="color: red;"> This field is required</div>
+</div>
+</div>
+    <div class="log-p">
+      <label>fullname</label><br>
+      <input type="text"  formControlName="fullname" placeholder="full name" style="width: 270px; height: 30px;">
+      <div *ngIf="myform.controls.fullname.invalid && (myform.controls.fullname.dirty || myform.controls.fullname.touched)" >
+      <div *ngIf="myform.controls.fullname.errors?.['required']" style="color: red;"> This field is required</div>
+     </div>
+     </div>
+</div> 
+
+<input type="text"  formControlName="email" placeholder="Email(work)" style="width: 400px; height: 30px;">
+<div *ngIf="myform.controls.email.invalid && (myform.controls.email.dirty || myform.controls.email.touched)">
+<div *ngIf="myform.controls.email.errors?.['required']"  style="color: red;"> email is requried</div>
+</div>  <br><br>
+
+<input type="text"  formControlName="phonenumber" placeholder="phone number(work)" style="width: 400px; height: 30px;">
+<div *ngIf="myform.controls.phonenumber.invalid && (myform.controls.phonenumber.dirty || myform.controls.phonenumber.touched)">
+<div *ngIf="myform.controls.phonenumber.errors?.['required']"  style="color: red;"> phonenumber is required</div>
+</div>  <br><br>
+
+<input type="text"  formControlName="location" placeholder="location is requried"  style="width: 400px; height: 30px;">
+<div *ngIf="myform.controls.location.invalid && (myform.controls.location.dirty || myform.controls.location.touched)">
+<div *ngIf="myform.controls.location.errors?.['required']"  style="color: red;"> mobilenumber is required</div>
+</div> <br><br>
+<button  style="width: 400px; height: 30px;">Request Button</button>
+
+</div>
+</form>
+</div>
+
+
+<div class="btmpage">
+  <h1>Get started with zero upfront investment</h1>
+  <button class="RDbtn"><a  routerLink="/requestdemo">Request Demo</a></button>
+</div> 
+<div class="bgctypes">
+<h1 class="androidapp_title">Book an appointment using our Drucare CliQ Android app</h1>
+   <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/appointment-icons/en_badge_web_generic.png" class="appstore_img">      
+</div>
+
+
+
+
+<div class="bgc_links" >
+  <div class="product_links">
+  <h1>products</h1>
+  <div  class="copyright">
+  <a href="">hospital</a>    <br><br>
+  <a href="">clinical</a>     <br><br>
+  <a href="">pharmacies</a>     <br><br>
+  <a href="">optical store</a>    <br><br>
+  <a href="">patients</a>           <br><br>
+  <a href="">lab information system</a>         <br><br>
+  <a href="">radiology information system</a> 
+  </div>
+  </div>   <br>
+
+<div class="company_links">
+  <h1>company</h1>
+  <div  class="copyright">
+  <a href="">who's Drucare</a>      <br><br>
+  <a href="">Affiliates</a>         <br><br>
+  <a href="">Pricing</a>            <br><br>
+  <a href="">careers</a>            <br><br>
+  <a href="">Contacts Us</a>         <br><br>
+  </div>
+</div> <br>
+
+  <div class="info_link">
+       <h1>Info</h1>
+       <div  class="copyright">
+       <a href="">Blogs</a>
+       </div>
+  </div> 
+  <div class="lastimgs">
+       <div style="padding-right: 10px;">
+           <div>
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/aws-partner-badge.png" class="aws_img">
+           </div> <br>
+           <div>
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/site/ABDM.png" alt="" class="aws_img">
+           </div>      
+       </div>
+   
+     <div>
+       <div>
+           <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/site/qci.png" alt="" class="aws_img">
+       </div><br>
+       <div>
+           <div>
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/site/drucare-iso-27001-certificate.jpg" alt="" style="width: 50px; height: 50px;">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/cmmi.png" alt="" style="width: 50px; height: 50px;">
+           </div>
+           <div>
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/iso.png" alt="" style="width: 50px; height: 50px;">
+              <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/misc-icons/comodo.png" alt="" style="width: 50px; height: 50px;">
+           </div>
+       </div>
+     </div>  
+  </div>
+</div>
+
+
+
+<mat-toolbar style=" background-color: #10346f; justify-content: space-between;">
+  <div  class="copyright">
+  <a href="">privacy policy</a>  &nbsp;&nbsp;  
+  <a href="">terms of services</a>  &nbsp;&nbsp;  
+  <a href="">payment & refund</a>   &nbsp;&nbsp;  
+  <a href="">advertisement</a>
+  </div>
+    <div>
+         <p class="copyright"><a href="">Copyright © 2016-2023, Drucare</a></p>
+   </div>
+</mat-toolbar>

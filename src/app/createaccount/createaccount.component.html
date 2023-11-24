@@ -1,0 +1,103 @@
+<div class="container1">
+     <div class="container-fluid1">
+         <div class="row1">
+             <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/drucare-brand-color.svg" alt="dru-logo" width="150px"> -->
+             <h1 style="font-size: 30px; color: #838383;">Drucare</h1>
+             <p>Have an account? <a style="color:#0098df" routerLink="/login">Login</a></p>
+         </div>
+         <form #loginForm="ngForm" >
+             <div class="container-fluid1" id="login_f">
+                 <div>
+                     <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/app/sign-up/login-page.svg" alt="login-svg" width="370px"> -->
+                 </div>
+             <div>
+                 <p>STEP 2 OF 2</p>
+                 <div>
+                     <h1 class="login-text">Create your account</h1>
+                     <span>Please enter your details to signup</span>
+                 </div>
+                 <br>
+                 <form [formGroup]="signupForm">
+                     <div>
+                         <div class="top-row">   
+                             <div class="login_inputs">
+                                 <label for="title">Title</label><br>
+                                 <select formcontrolname="title">
+                                     <option value="0: Dr"> Dr. </option>
+                                     <option  value="1: Mr"> Mr. </option>
+                                     <option value="2: Mrs"> Mrs. </option>
+                                     <option  value="3: Ms"> Ms. </option>
+                                     <option value="4: Professor"> Professor. </option>
+                                 </select>
+                             </div>
+                             <div class="login_inputs">
+                                 <label for="fName">First name:</label><br>
+                                 <input type="text" id="fname" formControlName="fname"  autocomplete='off' required >
+                                 <div *ngIf="signupForm.controls.fname.invalid && (signupForm.controls.fname.dirty || signupForm.controls.fname.touched)">
+                                     <p *ngIf="signupForm.controls.fname.errors?.['required']" class="text-danger" >
+                                         *Required Field</p>
+                                     <p *ngIf="signupForm.controls.fname.errors?.['minlength']" class="text-danger">
+                                         *Required 4 Charecters
+                                     </p>
+                                 </div>
+                             </div><br>
+                             <div class="login_inputs">
+                                 <label for="lname">Last name:</label><br>
+                                 <input type="text" id="lname" formControlName="lname"  autocomplete='off' required >
+                                 <div *ngIf="signupForm.controls.lname.invalid && (signupForm.controls.lname.dirty || signupForm.controls.lname.touched)">
+                                     <p *ngIf="signupForm.controls.lname.errors?.['required']" class="text-danger" >
+                                         *Required Field</p>
+                                     <p *ngIf="signupForm.controls.lname.errors?.['minlength']" class="text-danger">
+                                         *Required 8 Charecters
+                                     </p>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="login_C">
+                             <label for="email">Email:</label><br>
+                             <input type="email" id="email" formControlName="email" placeholder="eg:dru.care@gmail.com" required>
+                             <div *ngIf="signupForm.controls.email.invalid && (signupForm.controls.email.dirty || signupForm.controls.email.touched)">
+                                 <p *ngIf="signupForm.controls.email.errors?.['required']" [ngStyle]="{'color':'red'}" >
+                                     *Required Field
+                                 </p>
+                                 <p *ngIf="signupForm.controls.email.errors?.['minlength']" class="text-danger">
+                                     *name is too short
+                                 </p>
+                             </div>
+                         </div><br>
+                         <div class="login_C">
+                             <label for="mobile">Mobile number</label><br>
+                             <input type="text" name="mobile" id="mobile" formControlName="mobile" placeholder="eg: 123 456 7890" required>
+                             <div *ngIf="signupForm.controls.mobile.invalid && (signupForm.controls.mobile.dirty || signupForm.controls.mobile.touched)">
+                                 <p *ngIf="signupForm.controls.mobile.errors?.['required']" class="text-danger" >
+                                     *Required Field</p>
+                                 <p *ngIf="signupForm.controls.mobile.errors?.['minlength']" class="text-danger">
+                                     *Required 10 Charecters
+                                 </p>
+                                 <div *ngIf="signupForm.controls.mobile.errors?.['pattern']" class="text-danger">
+                                     Only numeric digits are allowed.</div>
+                             </div>
+                         </div><br>
+                         <div class="login_C">
+                             <label for="username">Username</label><br>
+                             <input type="text" name="username" id="username" formControlName="username" placeholder="eg: drucare1234" required>
+                             <div *ngIf="signupForm.controls.username.invalid && (signupForm.controls.username.dirty || signupForm.controls.username.touched)">
+                                 <p *ngIf="signupForm.controls.username.errors?.['required']" class="text-danger" >
+                                     *Required Field</p>
+                                 <p *ngIf="signupForm.controls.username.errors?.['minlength']" class="text-danger">
+                                     *Required 4 Charecters
+                                 </p>
+                             </div>
+                         </div><br> 
+                         <input type="checkbox"> I agree with the<span><a href="" style="color: #007bff!important;;">Terms of Service</a></span>
+                           of Drucare Pvt. Ltd
+                         <br>
+                     </div>
+                 </form><hr style="width: 600px;">
+             </div>
+         </div>
+         <a> <button class="sBtn" style='background-color: #d6d6d6;color: white;' [disabled]="!loginForm.form.valid" >Sign Up</button></a>
+         <a> <button class="sBtn" [disabled]="!loginForm.form.valid" routerLink="/signup">Back</button></a>   
+     </form>
+ </div>
+ </div>

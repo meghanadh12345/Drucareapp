@@ -1,0 +1,66 @@
+
+    <mat-toolbar>
+        <div>
+              <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/drucare-brand-color.svg" width="200px" height="50px">  -->
+              <h1 style="font-size: 30px; color: #838383;">Drucare</h1>
+        </div>
+        <div class="marque">
+             <marquee>Hi! we are moving to new address,please use <span style="color: #0098df;">in.dru.care</span> to access the application www.dru.care. </marquee>
+        </div>
+        <div>
+            <span>Dont have an account?</span>
+            <a routerLink="/signup">signup</a>
+        </div>
+        </mat-toolbar> <br><br><br>
+    
+    <div class="container">
+    <div class="pic">
+      <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/app/sign-up/login-page.svg"> -->
+      <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/app/sign-up/login-page.svg" alt=""> -->
+    </div>
+    
+    <div class="postsion">
+      <h1 class="loginbtn">Login</h1>
+      <p style="color: gray;">welcome to drucare enter your details to login</p><br>
+    
+    <form [formGroup]="myform">
+    <label>COUNTRY</label><br>
+      <select input type="text"  formControlName="country" placeholder="Country" class="form-control">
+          <option selected>india</option>
+          <option>usa</option>
+          <option>australia</option>
+      </select>
+    <div *ngIf="myform.controls.country.invalid && (myform.controls.country.dirty || myform.controls.country.touched)" >
+      <div *ngIf="myform.controls.country.errors?.['required']"  class="fielderrorcolor"> *country is required</div>
+    </div>  <br>
+    
+    <label>USERNAME</label><br>
+    <input type="text"  formControlName="username" placeholder="Enter username" class="form-control" >
+    <div *ngIf="myform.controls.username.invalid && (myform.controls.username.dirty || myform.controls.username.touched)">
+      <div *ngIf="myform.controls.username.errors?.['required']"  class="fielderrorcolor"> *username is required</div>
+    </div> <br>
+    
+    <label>PASSWORD</label><br>
+    <input type="text"  formControlName="password" placeholder="Enter your password" class="form-control">
+    <div *ngIf="myform.controls.password.invalid && (myform.controls.password.dirty || myform.controls.password.touched)">
+      <div *ngIf="myform.controls.password.errors?.['required']" class="fielderrorcolor"> *This field is required</div>
+      <div *ngIf="myform.controls.password.errors?.['pattern']" class="fielderrorcolor"> At least one uppercase letter</div>
+      <div *ngIf="myform.controls.password.errors?.['pattern']" class="fielderrorcolor"> At least one lowercase letter</div>
+      <div *ngIf="myform.controls.password.errors?.['pattern']" class="fielderrorcolor"> At least one special character</div>
+      <div *ngIf="myform.controls.password.errors?.['pattern']"  class="fielderrorcolor"> A minimum length of 8 characters</div>
+     
+    </div>  <br><br>
+    </form> <br>
+     
+    
+    <input type="checkbox">
+    <label>Login with OTP instead of Password</label> <br><br>
+    
+    <button class="loginsize">Login</button>  &nbsp;
+    <a routerLink="/troubleshoot">Trouble signing in?</a>
+    
+    </div>
+    </div>
+    
+    
+    

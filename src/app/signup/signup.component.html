@@ -1,0 +1,62 @@
+<div class="container1">
+     <div class="container-fluid1">
+         <div class="row1">
+             <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/website/drucare-brand-color.svg" alt="dru-logo" width="150px"> -->
+             <h1 style="font-size: 30px; color: #838383;">Drucare</h1>
+            
+             <p>Have an account? <a style="color:#0098df;" routerLink="/login">Login</a></p>
+         </div>
+         
+         <form #loginForm="ngForm" class="login_form">
+             <div class="container-fluid1" id="login_f">
+                 <div>
+                     <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/app/sign-up/login-page.svg" alt="login-svg" width="370px"> -->
+                     <!-- <img src="https://s3.ap-south-1.amazonaws.com/dru.assets/images/app/sign-up/login-page.svg" alt=""> -->
+                 </div>
+             <div>
+                 <p>STEP 1 OF 2</p>
+                 <div>
+                     <h1 class="login-text">Tell us about your organisation</h1>
+                     <span style="color:#838383;">it will help us optimise the application to cater your needs.</span>
+                 </div><br>
+                 <div class="login_inputs">
+                     <form [formGroup]="registeration" >
+                         <label for="name">Organisation name</label>
+                         <br>
+                         <input type="text" class="form-control" placeholder="Eg: Apollo Hospital" id="name" formControlName="name"
+                             autocomplete='off' >
+                             <div *ngIf="registeration.controls.name.invalid && (registeration.controls.name.dirty || registeration.controls.name.touched)">
+                                 <p *ngIf="registeration.controls.name.errors?.['required']" [ngStyle]="{'color':'red'}" >
+                                     *Required Field
+                                 </p>
+                                 <p *ngIf="registeration.controls.name.errors?.['minlength']" class="text-danger">
+                                     *name is too short
+                                 </p>
+                             </div>
+                             <div class="form-group" >
+                             <mat-label for="country"> Counrty</mat-label><br>
+                             <mat-select  [formControl]="selectControl"  class="form-control" id="select">
+                                 <mat-option value="option1">Afghanistan</mat-option>
+                                 <mat-option  *ngFor="let z of countries" value="{{z}}">{{z}}</mat-option>
+                             </mat-select>
+                             
+                            </div><br>
+                             <label for="organisation type"> Organisation type</label>
+                             <div class="containerCards">
+                                 <div class="card" *ngFor="let x of cardimgs">
+                                     <div class="radio-container">
+                                         <input type="radio" class="radio-button">
+                                       </div>
+                                     <img src="{{x.img}}" alt="">                                   
+                                   </div>
+                             </div>
+                     
+                         <hr>
+                         <a> <button class="sBtn"  [disabled]="!loginForm.form.valid" routerLink="/createaccount">Continue</button></a>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </form>
+ </div>
+ </div>                                                                                                                                             
